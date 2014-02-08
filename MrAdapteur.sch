@@ -658,7 +658,7 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="35.56" y="137.16" size="1.778" layer="91">Case: TME CP-Z-75/B </text>
+<text x="15.24" y="111.76" size="1.778" layer="91">Case: TME CP-Z-75/B </text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="99.06" rot="R270">
