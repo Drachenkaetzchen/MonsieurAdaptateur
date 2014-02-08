@@ -108,7 +108,7 @@
 <text x="42.545" y="8.255" size="0.8128" layer="25" rot="R90" align="center">1A max!</text>
 <text x="42.545" y="36.195" size="0.8128" layer="25" rot="R90" align="center">1A max!</text>
 <text x="8.5725" y="15.5575" size="0.8128" layer="25" align="center">2A max!</text>
-<text x="91.7575" y="26.9875" size="0.8128" layer="25" rot="R180" align="center">10A max!</text>
+<text x="91.44" y="26.67" size="0.8128" layer="25" rot="R180" align="center">10A max!</text>
 <wire x1="31.115" y1="10.4775" x2="31.115" y2="11.43" width="0.254" layer="25"/>
 <wire x1="31.115" y1="8.5725" x2="31.115" y2="7.62" width="0.254" layer="25"/>
 <wire x1="31.115" y1="37.1475" x2="31.115" y2="38.1" width="0.254" layer="25"/>
