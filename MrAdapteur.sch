@@ -146,10 +146,10 @@
 <pad name="P$1" x="0" y="0" drill="4" diameter="6"/>
 </package>
 <package name="BNC">
-<pad name="P$1" x="-2.5" y="0" drill="0.95"/>
-<pad name="P$2" x="0" y="0" drill="0.95"/>
-<hole x="4.6" y="4.6" drill="2"/>
-<hole x="-5.1" y="-3.6" drill="2"/>
+<pad name="P$1" x="-2.54" y="0.04" drill="0.95" diameter="1.778" shape="offset" rot="R90"/>
+<pad name="P$2" x="0" y="0" drill="0.95" diameter="1.778" shape="offset" rot="R270"/>
+<hole x="4.6" y="4.6" drill="1.9"/>
+<hole x="-5.1" y="-3.6" drill="1.9"/>
 <wire x1="-6.6" y1="-5.4" x2="6.6" y2="-5.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="-5.4" x2="6.6" y2="6.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="6.4" x2="-6.6" y2="6.4" width="0.127" layer="21"/>

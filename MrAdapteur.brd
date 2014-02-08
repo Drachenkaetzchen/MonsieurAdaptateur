@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -199,10 +199,10 @@
 <pad name="P$1" x="0" y="0" drill="4" diameter="6"/>
 </package>
 <package name="BNC">
-<pad name="P$1" x="-2.5" y="0" drill="0.95"/>
-<pad name="P$2" x="0" y="0" drill="0.95"/>
-<hole x="4.6" y="4.6" drill="2"/>
-<hole x="-5.1" y="-3.6" drill="2"/>
+<pad name="P$1" x="-2.54" y="0.04" drill="0.95" diameter="1.778" shape="offset" rot="R90"/>
+<pad name="P$2" x="0" y="0" drill="0.95" diameter="1.778" shape="offset" rot="R270"/>
+<hole x="4.6" y="4.6" drill="1.9"/>
+<hole x="-5.1" y="-3.6" drill="1.9"/>
 <wire x1="-6.6" y1="-5.4" x2="6.6" y2="-5.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="-5.4" x2="6.6" y2="6.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="6.4" x2="-6.6" y2="6.4" width="0.127" layer="21"/>
@@ -698,8 +698,6 @@ design rules under a new name.</description>
 <vertex x="92.71" y="0"/>
 <vertex x="95.25" y="2.54"/>
 </polygon>
-<wire x1="47.72" y1="22.32" x2="47.72" y2="20.86" width="1.016" layer="16"/>
-<wire x1="47.72" y1="20.86" x2="48.26" y2="20.32" width="1.016" layer="16"/>
 <contactref element="U$6" pad="TIP"/>
 </signal>
 <signal name="N$3">
@@ -745,8 +743,6 @@ design rules under a new name.</description>
 <vertex x="13.335" y="18.415"/>
 <vertex x="13.335" y="17.145"/>
 </polygon>
-<wire x1="45.22" y1="22.32" x2="45.22" y2="23.63" width="1.016" layer="16"/>
-<wire x1="45.22" y1="23.63" x2="45.72" y2="24.13" width="1.016" layer="16"/>
 <contactref element="U$6" pad="RING"/>
 <contactref element="U$6" pad="RING_SW"/>
 </signal>
