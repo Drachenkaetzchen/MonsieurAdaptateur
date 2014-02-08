@@ -148,12 +148,12 @@
 <package name="BNC">
 <pad name="P$1" x="-2.54" y="0.04" drill="0.95" diameter="1.778" shape="offset" rot="R90"/>
 <pad name="P$2" x="0" y="0" drill="0.95" diameter="1.778" shape="offset" rot="R270"/>
-<hole x="4.6" y="4.6" drill="1.9"/>
-<hole x="-5.1" y="-3.6" drill="1.9"/>
 <wire x1="-6.6" y1="-5.4" x2="6.6" y2="-5.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="-5.4" x2="6.6" y2="6.4" width="0.127" layer="21"/>
 <wire x1="6.6" y1="6.4" x2="-6.6" y2="6.4" width="0.127" layer="21"/>
 <wire x1="-6.6" y1="6.4" x2="-6.6" y2="-5.4" width="0.127" layer="21"/>
+<pad name="P$3" x="-5.1" y="-3.6" drill="1.9" diameter="3.5" shape="octagon"/>
+<pad name="P$4" x="4.6" y="4.6" drill="1.9" diameter="3.5" shape="octagon"/>
 </package>
 </packages>
 <symbols>
@@ -733,8 +733,6 @@ Flachstecker / Faston</description>
 <part name="X4" library="con-rib" deviceset="ST4,8" device=""/>
 <part name="X5" library="con-rib" deviceset="ST4,8" device=""/>
 <part name="X6" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="X7" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="X8" library="con-rib" deviceset="ST4,8" device=""/>
 <part name="U$6" library="adafruit" deviceset="2.1MMJACK" device="THM"/>
 </parts>
 <sheets>
@@ -783,12 +781,6 @@ Flachstecker / Faston</description>
 </instance>
 <instance part="X6" gate="-1" x="160.02" y="53.34" smashed="yes" rot="R180">
 <attribute name="VALUE" x="160.02" y="55.753" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="X7" gate="-1" x="160.02" y="83.82" smashed="yes" rot="R180">
-<attribute name="VALUE" x="160.02" y="86.233" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="X8" gate="-1" x="160.02" y="43.18" smashed="yes" rot="R180">
-<attribute name="VALUE" x="160.02" y="45.593" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$6" gate="G$1" x="157.48" y="60.96" rot="MR0"/>
 </instances>
@@ -878,8 +870,6 @@ Flachstecker / Faston</description>
 <pinref part="X5" gate="-1" pin="1"/>
 <wire x1="154.94" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 <junction x="147.32" y="71.12"/>
-<pinref part="X7" gate="-1" pin="2"/>
-<pinref part="X7" gate="-1" pin="1"/>
 <wire x1="154.94" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="147.32" y="81.28"/>
 <pinref part="U$6" gate="G$1" pin="TIP"/>
@@ -971,10 +961,8 @@ Flachstecker / Faston</description>
 <pinref part="X6" gate="-1" pin="1"/>
 <wire x1="154.94" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
 <junction x="147.32" y="50.8"/>
-<pinref part="X8" gate="-1" pin="2"/>
 <wire x1="154.94" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="43.18"/>
-<pinref part="X8" gate="-1" pin="1"/>
 <pinref part="U$6" gate="G$1" pin="RING"/>
 <pinref part="U$6" gate="G$1" pin="RING_SW"/>
 </segment>
