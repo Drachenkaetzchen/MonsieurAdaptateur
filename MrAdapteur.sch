@@ -81,12 +81,12 @@
 <package name="BNC">
 <pad name="P$1" x="-2.5" y="0" drill="0.95"/>
 <pad name="P$2" x="0" y="0" drill="0.95"/>
-<hole x="5.1" y="5.1" drill="2"/>
-<hole x="-5.1" y="-5.1" drill="2"/>
-<wire x1="-7.6" y1="-7.6" x2="7.6" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="7.6" y1="-7.6" x2="7.6" y2="7.4" width="0.127" layer="21"/>
-<wire x1="7.6" y1="7.4" x2="-7.6" y2="7.4" width="0.127" layer="21"/>
-<wire x1="-7.6" y1="7.4" x2="-7.6" y2="-7.6" width="0.127" layer="21"/>
+<hole x="4.6" y="4.6" drill="2"/>
+<hole x="-5.1" y="-3.6" drill="2"/>
+<wire x1="-6.6" y1="-5.4" x2="6.6" y2="-5.4" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-5.4" x2="6.6" y2="6.4" width="0.127" layer="21"/>
+<wire x1="6.6" y1="6.4" x2="-6.6" y2="6.4" width="0.127" layer="21"/>
+<wire x1="-6.6" y1="6.4" x2="-6.6" y2="-5.4" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -318,195 +318,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="con-faston">
-<description>&lt;b&gt;FASTON Connector&lt;/b&gt; Printed Circuit Board Tabs&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="F061.040">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt;&lt;p&gt;
-Flachstecker Typ 00.15 (F061.040)&lt;br&gt;
-Distributor: Bürklin</description>
-<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.060">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ 00.45.1 (F061.060)&lt;br&gt;
-Distributor: Bürklin 05 F 266</description>
-<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.080">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ Vogt 3866G.68 (F061.080)&lt;br&gt;
-Distributor: Bürklin 05 F 268</description>
-<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
-<pad name="1A" x="-2.5" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.100">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ Vogt 3866B.68 (F061.100)&lt;br&gt;
-Distributor: Bürklin 05 F 270</description>
-<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.5" y="0" drill="1.4" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.5" y="0" drill="1.4" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.200">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
-Flachstecker Typ 17128.. (F061.200)&lt;br&gt;
-Distributor: Bürklin 05 F 280</description>
-<wire x1="-3.6" y1="0" x2="4.55" y2="0" width="0.8" layer="51"/>
-<wire x1="4.55" y1="0" x2="11.6" y2="0" width="0.8" layer="21"/>
-<pad name="1A" x="-2.5" y="0" drill="1.3" diameter="2.5" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.3" diameter="2.5" shape="long"/>
-<text x="-3.81" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="5.08" y="1.27" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.220">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
-Flachstecker Typ 00.32 (F061.220)&lt;br&gt;
-Distributor: Bürklin 05 F 282</description>
-<wire x1="-3.6" y1="0" x2="17.1" y2="0" width="0.8" layer="51"/>
-<wire x1="5.35" y1="0" x2="17.1" y2="0" width="0.8" layer="21"/>
-<pad name="1A" x="-2.5" y="0" drill="1.2" diameter="2.5" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.2" diameter="2.5" shape="long"/>
-<text x="-3.81" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="5.08" y="1.27" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="62409-1">
-<description>&lt;b&gt;TAB, FASTON, PC Board, 6,35 (.250) Series&lt;/b&gt;&lt;p&gt;
-Distributor: Digikey - Nb.  A24742-ND&lt;br&gt;
-Source: http://catalog.tycoelectronics.com .. ENG_CD_62409_R.pdf</description>
-<pad name="A1" x="-2.65" y="0" drill="1.5" diameter="1.9" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.5" diameter="1.9" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.75" y1="-0.4" x2="3.75" y2="0.4" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PIN">
-<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PIN2" prefix="J">
-<description>&lt;b&gt;Flachstecker Typ Tyco/Electronics/AMP&lt;/b&gt; TAB, FASTON&lt;p&gt;
-Printed Circuit Board Tabs&lt;br&gt;
-Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description>
-<gates>
-<gate name="-1" symbol="PIN" x="0" y="0" swaplevel="1"/>
-</gates>
-<devices>
-<device name="F061.040" package="F061.040">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.060" package="F061.060">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.080" package="F061.080">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.100" package="F061.100">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.200" package="F061.200">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.220" package="F061.220">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="62409-1" package="62409-1">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-phoenix-350">
 <description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -610,6 +421,190 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-lumberg">
+<description>&lt;b&gt;Lumberg Connectors&lt;/b&gt;&lt;p&gt;
+include con-mfs.lbr - 2001.03.22&lt;br&gt;
+Jack connectors - 2005.11.23&lt;p&gt;
+http://www.lumberg.de&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="NEB21R">
+<description>&lt;b&gt;Netzgeräte-Einbaukupplung&lt;/b&gt; abgewinkelte Ausführung mit Öffner&lt;p&gt;
+Source: http://www.lumberg.com/Produkte/PDFs/NEB21R.pdf</description>
+<wire x1="5.4" y1="5.9" x2="4.4" y2="5.9" width="0" layer="46"/>
+<wire x1="5.4" y1="2.9" x2="4.4" y2="2.9" width="0" layer="46"/>
+<wire x1="5.4" y1="5.9" x2="5.4" y2="2.9" width="0" layer="46"/>
+<wire x1="4.4" y1="5.9" x2="4.4" y2="2.9" width="0" layer="46"/>
+<wire x1="-1.5" y1="1.85" x2="1.5" y2="1.85" width="0" layer="46"/>
+<wire x1="1.5" y1="1.85" x2="1.5" y2="0.85" width="0" layer="46"/>
+<wire x1="1.5" y1="0.85" x2="-1.5" y2="0.85" width="0" layer="46"/>
+<wire x1="-1.5" y1="0.85" x2="-1.5" y2="1.85" width="0" layer="46"/>
+<wire x1="-1.75" y1="7.85" x2="1.75" y2="7.85" width="0" layer="46"/>
+<wire x1="1.75" y1="7.85" x2="1.75" y2="6.85" width="0" layer="46"/>
+<wire x1="1.75" y1="6.85" x2="-1.75" y2="6.85" width="0" layer="46"/>
+<wire x1="-1.75" y1="6.85" x2="-1.75" y2="7.85" width="0" layer="46"/>
+<wire x1="-4.4" y1="-6.25" x2="4.4" y2="-6.25" width="0.2032" layer="21"/>
+<wire x1="-4.4" y1="7.05" x2="-4.4" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-4.4" y1="-2.75" x2="-4.4" y2="-6.25" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="7.05" x2="-4.4" y2="7.05" width="0.2032" layer="21"/>
+<wire x1="4.4" y1="7.05" x2="2.6" y2="7.05" width="0.2032" layer="21"/>
+<wire x1="2.527" y1="7.05" x2="-2.527" y2="7.05" width="0.2032" layer="51"/>
+<wire x1="4.4" y1="-6.25" x2="4.4" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="4.4" y1="1.75" x2="4.4" y2="7.05" width="0.2032" layer="51"/>
+<wire x1="-4.4" y1="-2.75" x2="4.4" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-5.85" x2="-3" y2="-4.85" width="0.1016" layer="21"/>
+<wire x1="-3" y1="-4.35" x2="-3" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-3" y1="-2.35" x2="-3" y2="-1.35" width="0.1016" layer="21"/>
+<wire x1="-3" y1="-0.85" x2="-3" y2="0.15" width="0.1016" layer="21"/>
+<wire x1="-3" y1="0.65" x2="-3" y2="1.65" width="0.1016" layer="21"/>
+<wire x1="3" y1="-5.85" x2="3" y2="-4.85" width="0.1016" layer="21"/>
+<wire x1="3" y1="-4.35" x2="3" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="3" y1="-2.35" x2="3" y2="-1.35" width="0.1016" layer="21"/>
+<wire x1="3" y1="-0.85" x2="3" y2="0.15" width="0.1016" layer="21"/>
+<wire x1="3" y1="0.65" x2="3" y2="1.65" width="0.1016" layer="21"/>
+<wire x1="-1" y1="-5.35" x2="-1" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-1" y1="-2.35" x2="-1" y2="0.15" width="0.1016" layer="21"/>
+<wire x1="1" y1="-5.35" x2="1" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="1" y1="-2.35" x2="1" y2="0.15" width="0.1016" layer="21"/>
+<wire x1="-1" y1="-5.35" x2="-0.5" y2="-5.85" width="0.1016" layer="21"/>
+<wire x1="-0.5" y1="-5.85" x2="0.5" y2="-5.85" width="0.1016" layer="21"/>
+<wire x1="0.5" y1="-5.85" x2="1" y2="-5.35" width="0.1016" layer="21"/>
+<pad name="3" x="0" y="1.35" drill="0.8128" diameter="1.778" shape="long"/>
+<pad name="1" x="0" y="7.35" drill="0.8128" diameter="1.778" shape="long"/>
+<pad name="2" x="4.9" y="4.4" drill="0.8128" diameter="1.778" shape="long" rot="R90"/>
+<text x="6" y="-5.85" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5" y="-5.85" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DIN45323">
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.778" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="0.762" x2="2.54" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="2.286" x2="-1.016" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.524" x2="-0.508" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="-0.762" y2="2.286" width="0.254" layer="94"/>
+<text x="-2.54" y="4.064" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.096" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.54" y1="-3.048" x2="2.794" y2="-2.032" layer="94"/>
+<pin name="1" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NEB21R" prefix="X">
+<description>&lt;b&gt;Netzgeräte-Einbaukupplung&lt;/b&gt; abgewinkelte Ausführung mit Öffner&lt;/b&gt;&lt;p&gt;
+Source: http://www.lumberg.com/Produkte/PDFs/NEB21R.pdf</description>
+<gates>
+<gate name="G$1" symbol="DIN45323" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NEB21R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="NEB 21 R" constant="no"/>
+<attribute name="OC_FARNELL" value="1217037" constant="no"/>
+<attribute name="OC_NEWARK" value="97K6458" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-rib">
+<description>&lt;b&gt;Ribbon Cable Connectors&lt;/b&gt; Flachstecker / Faston&lt;p&gt;
+Width 2,8 mm, 4,8 mm, 6,3 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="ST4,8">
+<description>&lt;b&gt;RIBBON CABLE CONNECTOR&lt;/b&gt;&lt;p&gt;
+Flachstecker / Faston</description>
+<wire x1="2.5654" y1="-0.3302" x2="2.5654" y2="0.3302" width="0.254" layer="51"/>
+<wire x1="2.5654" y1="0.3302" x2="-2.5146" y2="0.3302" width="0.254" layer="51"/>
+<wire x1="-2.5146" y1="0.3302" x2="-2.5146" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-2.5146" y1="-0.3302" x2="-0.635" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-0.635" y1="-0.3302" x2="0.635" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="0.635" y1="-0.3302" x2="2.5654" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="2.5654" y1="0.3302" x2="4.1402" y2="0.3302" width="0.254" layer="51"/>
+<wire x1="4.1402" y1="0.3302" x2="4.1402" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="4.1402" y1="-0.3302" x2="2.5654" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-2.5146" y1="0.3302" x2="-4.1148" y2="0.3302" width="0.254" layer="51"/>
+<wire x1="-4.1148" y1="0.3302" x2="-4.1148" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-4.1148" y1="-0.3302" x2="-2.5146" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.27" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="1.524" y1="0.508" x2="1.8508" y2="-0.66" width="0.254" layer="51" curve="-282.34222"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.5258" y2="0.5706" width="0.254" layer="51" curve="-283.240738"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="-0.635" x2="0" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="-0.635" y1="-0.3302" x2="-0.635" y2="0.635" width="0.254" layer="51"/>
+<wire x1="-0.635" y1="-0.3302" x2="0" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="0" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-0.3302" width="0.254" layer="51"/>
+<wire x1="0.635" y1="-0.3302" x2="0.635" y2="0.635" width="0.254" layer="51"/>
+<wire x1="0.635" y1="-0.3302" x2="1.27" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="0.635" y1="0.635" x2="0.3302" y2="0.9652" width="0.254" layer="51"/>
+<wire x1="-0.635" y1="0.635" x2="-0.3048" y2="0.9652" width="0.254" layer="51"/>
+<wire x1="-0.3048" y1="0.9652" x2="0.3302" y2="0.9652" width="0.254" layer="51"/>
+<wire x1="-0.4064" y1="0.3302" x2="0.4064" y2="0.3302" width="0.254" layer="21"/>
+<wire x1="-0.4064" y1="-0.3302" x2="0.4064" y2="-0.3302" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.397" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.397" shape="long" rot="R90"/>
+<text x="-3.302" y="2.2352" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MD">
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.3048" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.127" width="0.3048" layer="94"/>
+<text x="0" y="3.429" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.413" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ST4,8" prefix="X" uservalue="yes">
+<description>&lt;b&gt;RIBBON CABLE CONNECTOR&lt;/b&gt;&lt;p&gt;
+Flachstecker / Faston</description>
+<gates>
+<gate name="-1" symbol="MD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ST4,8">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -647,13 +642,14 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X6" device="">
 <attribute name="OC_TME" value="ZL262-6SG"/>
 </part>
-<part name="J1" library="con-faston" deviceset="PIN2" device="F061.080">
-<attribute name="OC_TME" value="FS1536"/>
-</part>
-<part name="J2" library="con-faston" deviceset="PIN2" device="F061.080">
-<attribute name="OC_TME" value="FS1536"/>
-</part>
 <part name="X1" library="con-phoenix-350" deviceset="1751248" device=""/>
+<part name="X2" library="con-lumberg" deviceset="NEB21R" device=""/>
+<part name="X3" library="con-rib" deviceset="ST4,8" device=""/>
+<part name="X4" library="con-rib" deviceset="ST4,8" device=""/>
+<part name="X5" library="con-rib" deviceset="ST4,8" device=""/>
+<part name="X6" library="con-rib" deviceset="ST4,8" device=""/>
+<part name="X7" library="con-rib" deviceset="ST4,8" device=""/>
+<part name="X8" library="con-rib" deviceset="ST4,8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -688,14 +684,27 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <instance part="JP4" gate="A" x="116.84" y="30.48" rot="R270">
 <attribute name="OC_TME" x="116.84" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="J1" gate="-1" x="137.16" y="83.82">
-<attribute name="OC_TME" x="137.16" y="83.82" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="J2" gate="-1" x="137.16" y="40.64">
-<attribute name="OC_TME" x="137.16" y="40.64" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="X1" gate="-1" x="40.64" y="83.82" rot="R180"/>
 <instance part="X1" gate="-2" x="40.64" y="40.64" rot="R180"/>
+<instance part="X2" gate="G$1" x="157.48" y="60.96" rot="MR180"/>
+<instance part="X3" gate="-1" x="160.02" y="78.74" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="81.153" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X4" gate="-1" x="160.02" y="48.26" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="50.673" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X5" gate="-1" x="160.02" y="73.66" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="76.073" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X6" gate="-1" x="160.02" y="53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="55.753" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X7" gate="-1" x="160.02" y="83.82" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="86.233" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X8" gate="-1" x="160.02" y="43.18" smashed="yes" rot="R180">
+<attribute name="VALUE" x="160.02" y="45.593" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -758,11 +767,36 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <pinref part="JP3" gate="A" pin="2"/>
 <wire x1="114.3" y1="88.9" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 <junction x="114.3" y="83.82"/>
-<pinref part="J1" gate="-1" pin="1"/>
-<wire x1="124.46" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
 <junction x="124.46" y="83.82"/>
 <pinref part="X1" gate="-1" pin="K"/>
 <junction x="43.18" y="83.82"/>
+<pinref part="X2" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="63.5" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<junction x="147.32" y="83.82"/>
+<pinref part="X3" gate="-1" pin="2"/>
+<wire x1="147.32" y1="71.12" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="73.66" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="76.2" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="78.74" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="81.28" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="78.74" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
+<junction x="147.32" y="78.74"/>
+<pinref part="X3" gate="-1" pin="1"/>
+<wire x1="154.94" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<junction x="147.32" y="76.2"/>
+<pinref part="X5" gate="-1" pin="2"/>
+<wire x1="154.94" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<junction x="147.32" y="73.66"/>
+<pinref part="X5" gate="-1" pin="1"/>
+<wire x1="154.94" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<junction x="147.32" y="71.12"/>
+<pinref part="X7" gate="-1" pin="2"/>
+<pinref part="X7" gate="-1" pin="1"/>
+<wire x1="154.94" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="147.32" y="81.28"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -823,11 +857,40 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <junction x="121.92" y="40.64"/>
 <pinref part="JP4" gate="A" pin="1"/>
 <wire x1="124.46" y1="33.02" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="J2" gate="-1" pin="1"/>
-<wire x1="124.46" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
 <junction x="124.46" y="40.64"/>
 <pinref part="X1" gate="-2" pin="K"/>
 <junction x="43.18" y="40.64"/>
+<pinref part="X2" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="60.96" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+<junction x="147.32" y="40.64"/>
+<pinref part="X2" gate="G$1" pin="3"/>
+<wire x1="147.32" y1="58.42" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="53.34" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="50.8" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="48.26" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="45.72" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="43.18" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+<junction x="147.32" y="58.42"/>
+<pinref part="X4" gate="-1" pin="2"/>
+<wire x1="154.94" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="147.32" y="48.26"/>
+<pinref part="X4" gate="-1" pin="1"/>
+<wire x1="154.94" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<junction x="147.32" y="45.72"/>
+<pinref part="X6" gate="-1" pin="2"/>
+<wire x1="154.94" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<junction x="147.32" y="53.34"/>
+<pinref part="X6" gate="-1" pin="1"/>
+<wire x1="154.94" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<junction x="147.32" y="50.8"/>
+<pinref part="X8" gate="-1" pin="2"/>
+<wire x1="154.94" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<junction x="147.32" y="43.18"/>
+<pinref part="X8" gate="-1" pin="1"/>
 </segment>
 </net>
 </nets>
