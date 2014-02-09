@@ -155,6 +155,9 @@
 <pad name="P$3" x="-5.1" y="-3.6" drill="1.9" diameter="3.5" shape="octagon"/>
 <pad name="P$4" x="4.6" y="4.6" drill="1.9" diameter="3.5" shape="octagon"/>
 </package>
+<package name="SOLPAD07">
+<pad name="P$1" x="0" y="0" drill="0.7" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4MMPLUG">
@@ -168,6 +171,9 @@
 <pin name="GND" x="-12.7" y="-2.54" length="middle"/>
 <pin name="P+" x="-12.7" y="0" length="middle"/>
 <wire x1="-7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SOLPAD">
+<pin name="P$1" x="-2.54" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -210,6 +216,21 @@
 <connects>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="P+" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOLPAD07">
+<gates>
+<gate name="G$1" symbol="SOLPAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOLPAD07">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -691,6 +712,33 @@ Flachstecker / Faston</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="dummy">
+<packages>
+</packages>
+<symbols>
+<symbol name="DUMMY">
+<text x="-2.54" y="0.254" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DUMMY">
+<gates>
+<gate name="G$1" symbol="DUMMY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -703,86 +751,157 @@ Flachstecker / Faston</description>
 <parts>
 <part name="U$1" library="4mm" deviceset="4MMPLUG" device="">
 <attribute name="OC_REICHELT" value="BB 4 SW"/>
+<attribute name="PRICE_10" value="0.3"/>
 </part>
 <part name="U$2" library="4mm" deviceset="4MMPLUG" device="" value="4MMPLUG">
-<attribute name="OC_REICHELT" value="BB 4 RE"/>
+<attribute name="OC_REICHELT" value="BB 4 RT"/>
+<attribute name="PRICE_10" value="0.3"/>
 </part>
 <part name="U$3" library="4mm" deviceset="2MMPLUG" device="">
 <attribute name="OC_TME" value="BS-102S-B"/>
+<attribute name="PRICE_10" value="0.32"/>
 </part>
 <part name="U$4" library="4mm" deviceset="2MMPLUG" device="">
 <attribute name="OC_TME" value="BS-102S-R"/>
+<attribute name="PRICE_10" value="0.32"/>
 </part>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device="">
 <attribute name="OC_TME" value="ZL201-06G"/>
+<attribute name="PRICE_25" value="0.045"/>
 </part>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X6" device="">
 <attribute name="OC_TME" value="ZL201-06G"/>
+<attribute name="PRICE_25" value="0.045"/>
 </part>
 <part name="U$5" library="4mm" deviceset="BNC" device="">
 <attribute name="OC_TME" value="BNC-208"/>
+<attribute name="PRICE_10" value="0.573"/>
 </part>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X6" device="">
 <attribute name="OC_TME" value="ZL262-6SG"/>
+<attribute name="PRICE_10" value="0.114"/>
 </part>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X6" device="">
 <attribute name="OC_TME" value="ZL262-6SG"/>
+<attribute name="PRICE_10" value="0.114"/>
 </part>
-<part name="X1" library="con-phoenix-350" deviceset="1751248" device=""/>
-<part name="X3" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="X4" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="X5" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="X6" library="con-rib" deviceset="ST4,8" device=""/>
-<part name="U$6" library="adafruit" deviceset="2.1MMJACK" device="THM"/>
+<part name="X1" library="con-phoenix-350" deviceset="1751248" device="">
+<attribute name="OC_TME" value="TB-3.5-P-2P/BL"/>
+<attribute name="PRICE_10" value="0.155"/>
+</part>
+<part name="X3" library="con-rib" deviceset="ST4,8" device="">
+<attribute name="OC_REICHELT" value="FS-P 4,75"/>
+<attribute name="PRICE_10" value="0.04"/>
+</part>
+<part name="X4" library="con-rib" deviceset="ST4,8" device="">
+<attribute name="OC_REICHELT" value="FS-P 4,75"/>
+<attribute name="PRICE_10" value="0.04"/>
+</part>
+<part name="X5" library="con-rib" deviceset="ST4,8" device="">
+<attribute name="OC_REICHELT" value="FS-P 6,35"/>
+<attribute name="PRICE_10" value="0.05"/>
+</part>
+<part name="X6" library="con-rib" deviceset="ST4,8" device="">
+<attribute name="OC_REICHELT" value="FS-P 6,35"/>
+<attribute name="PRICE_10" value="0.05"/>
+</part>
+<part name="U$6" library="adafruit" deviceset="2.1MMJACK" device="THM">
+<attribute name="OC_TME" value="PC-GK2.1"/>
+<attribute name="PRICE_10" value="0.167"/>
+</part>
+<part name="CASE" library="dummy" deviceset="DUMMY" device="">
+<attribute name="OC_TME" value="CP-Z-75/B"/>
+<attribute name="PRICE_10" value="0.688"/>
+</part>
+<part name="WASHERSM4" library="dummy" deviceset="DUMMY" device=""/>
+<part name="WASHERSM6" library="dummy" deviceset="DUMMY" device=""/>
+<part name="SCREWSM3" library="dummy" deviceset="DUMMY" device=""/>
+<part name="U$8" library="4mm" deviceset="SOLPAD07" device=""/>
+<part name="U$9" library="4mm" deviceset="SOLPAD07" device=""/>
+<part name="U$10" library="4mm" deviceset="SOLPAD07" device=""/>
+<part name="U$11" library="4mm" deviceset="SOLPAD07" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="15.24" y="111.76" size="1.778" layer="91">Case: TME CP-Z-75/B </text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="99.06" rot="R270">
 <attribute name="OC_REICHELT" x="43.18" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_10" x="43.18" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U$2" gate="G$1" x="43.18" y="58.42" rot="R270">
 <attribute name="OC_REICHELT" x="43.18" y="58.42" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_10" x="43.18" y="58.42" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U$3" gate="G$1" x="66.04" y="99.06" rot="R270">
 <attribute name="OC_TME" x="66.04" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_10" x="66.04" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U$4" gate="G$1" x="66.04" y="58.42" rot="R270">
 <attribute name="OC_TME" x="66.04" y="58.42" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_10" x="66.04" y="58.42" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="JP1" gate="A" x="99.06" y="91.44" rot="R90">
 <attribute name="OC_TME" x="99.06" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PRICE_25" x="99.06" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="JP2" gate="A" x="96.52" y="30.48" rot="R270">
 <attribute name="OC_TME" x="96.52" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_25" x="96.52" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U$5" gate="G$1" x="132.08" y="60.96">
 <attribute name="OC_TME" x="132.08" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="132.08" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP3" gate="A" x="119.38" y="91.44" rot="R90">
 <attribute name="OC_TME" x="119.38" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PRICE_10" x="119.38" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="JP4" gate="A" x="116.84" y="30.48" rot="R270">
 <attribute name="OC_TME" x="116.84" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PRICE_10" x="116.84" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="X1" gate="-1" x="40.64" y="83.82" rot="R180"/>
+<instance part="X1" gate="-1" x="40.64" y="83.82" rot="R180">
+<attribute name="OC_TME" x="40.64" y="83.82" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="40.64" y="83.82" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="X1" gate="-2" x="40.64" y="40.64" rot="R180"/>
 <instance part="X3" gate="-1" x="160.02" y="78.74" smashed="yes" rot="R180">
 <attribute name="VALUE" x="160.02" y="81.153" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="160.02" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="160.02" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X4" gate="-1" x="160.02" y="48.26" smashed="yes" rot="R180">
 <attribute name="VALUE" x="160.02" y="50.673" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="160.02" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="160.02" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X5" gate="-1" x="160.02" y="73.66" smashed="yes" rot="R180">
 <attribute name="VALUE" x="160.02" y="76.073" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="160.02" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="160.02" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X6" gate="-1" x="160.02" y="53.34" smashed="yes" rot="R180">
 <attribute name="VALUE" x="160.02" y="55.753" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="160.02" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="160.02" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$6" gate="G$1" x="157.48" y="60.96" rot="MR0"/>
+<instance part="U$6" gate="G$1" x="157.48" y="60.96" rot="MR0">
+<attribute name="OC_TME" x="157.48" y="60.96" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PRICE_10" x="157.48" y="60.96" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="CASE" gate="G$1" x="15.24" y="111.76">
+<attribute name="OC_TME" x="15.24" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="15.24" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="WASHERSM4" gate="G$1" x="15.24" y="104.14"/>
+<instance part="WASHERSM6" gate="G$1" x="15.24" y="96.52"/>
+<instance part="SCREWSM3" gate="G$1" x="15.24" y="88.9"/>
+<instance part="U$8" gate="G$1" x="157.48" y="83.82"/>
+<instance part="U$9" gate="G$1" x="157.48" y="40.64"/>
+<instance part="U$10" gate="G$1" x="157.48" y="81.28"/>
+<instance part="U$11" gate="G$1" x="157.48" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -849,10 +968,8 @@ Flachstecker / Faston</description>
 <junction x="124.46" y="83.82"/>
 <pinref part="X1" gate="-1" pin="K"/>
 <junction x="43.18" y="83.82"/>
-<wire x1="147.32" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="63.5" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<junction x="147.32" y="83.82"/>
 <pinref part="X3" gate="-1" pin="2"/>
 <wire x1="147.32" y1="71.12" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="73.66" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
@@ -870,9 +987,13 @@ Flachstecker / Faston</description>
 <pinref part="X5" gate="-1" pin="1"/>
 <wire x1="154.94" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 <junction x="147.32" y="71.12"/>
+<pinref part="U$6" gate="G$1" pin="TIP"/>
+<wire x1="147.32" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
+<junction x="147.32" y="83.82"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="U$10" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="147.32" y="81.28"/>
-<pinref part="U$6" gate="G$1" pin="TIP"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -937,10 +1058,8 @@ Flachstecker / Faston</description>
 <junction x="124.46" y="40.64"/>
 <pinref part="X1" gate="-2" pin="K"/>
 <junction x="43.18" y="40.64"/>
-<wire x1="147.32" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="60.96" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<junction x="147.32" y="40.64"/>
 <wire x1="147.32" y1="58.42" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="53.34" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="50.8" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
@@ -961,10 +1080,14 @@ Flachstecker / Faston</description>
 <pinref part="X6" gate="-1" pin="1"/>
 <wire x1="154.94" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
 <junction x="147.32" y="50.8"/>
-<wire x1="154.94" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
-<junction x="147.32" y="43.18"/>
 <pinref part="U$6" gate="G$1" pin="RING"/>
 <pinref part="U$6" gate="G$1" pin="RING_SW"/>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<wire x1="147.32" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
+<junction x="147.32" y="40.64"/>
+<pinref part="U$11" gate="G$1" pin="P$1"/>
+<wire x1="154.94" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<junction x="147.32" y="43.18"/>
 </segment>
 </net>
 </nets>
