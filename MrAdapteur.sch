@@ -155,9 +155,6 @@
 <pad name="P$3" x="-5.1" y="-3.6" drill="1.9" diameter="3.5" shape="octagon"/>
 <pad name="P$4" x="4.6" y="4.6" drill="1.9" diameter="3.5" shape="octagon"/>
 </package>
-<package name="SOLPAD07">
-<pad name="P$1" x="0" y="0" drill="0.7" shape="octagon"/>
-</package>
 </packages>
 <symbols>
 <symbol name="4MMPLUG">
@@ -171,9 +168,6 @@
 <pin name="GND" x="-12.7" y="-2.54" length="middle"/>
 <pin name="P+" x="-12.7" y="0" length="middle"/>
 <wire x1="-7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SOLPAD">
-<pin name="P$1" x="-2.54" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -216,21 +210,6 @@
 <connects>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="P+" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLPAD07">
-<gates>
-<gate name="G$1" symbol="SOLPAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOLPAD07">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -739,6 +718,61 @@ Flachstecker / Faston</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="solpad">
+<description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="LSP11">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.1 mm</description>
+<wire x1="-1.27" y1="0.254" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.254" x2="0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-1.143" y1="-0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="-0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<pad name="MP" x="0" y="0" drill="1.1176" diameter="2.159" shape="octagon"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.254" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSP">
+<wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
+<circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
+<text x="-1.27" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSP11" prefix="LSP">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.1 mm</description>
+<gates>
+<gate name="1" symbol="LSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSP11">
+<connects>
+<connect gate="1" pin="MP" pad="MP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -816,10 +850,10 @@ Flachstecker / Faston</description>
 <part name="WASHERSM4" library="dummy" deviceset="DUMMY" device=""/>
 <part name="WASHERSM6" library="dummy" deviceset="DUMMY" device=""/>
 <part name="SCREWSM3" library="dummy" deviceset="DUMMY" device=""/>
-<part name="U$8" library="4mm" deviceset="SOLPAD07" device=""/>
-<part name="U$9" library="4mm" deviceset="SOLPAD07" device=""/>
-<part name="U$10" library="4mm" deviceset="SOLPAD07" device=""/>
-<part name="U$11" library="4mm" deviceset="SOLPAD07" device=""/>
+<part name="LSP1" library="solpad" deviceset="LSP11" device=""/>
+<part name="LSP2" library="solpad" deviceset="LSP11" device=""/>
+<part name="LSP3" library="solpad" deviceset="LSP11" device=""/>
+<part name="LSP4" library="solpad" deviceset="LSP11" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -898,10 +932,10 @@ Flachstecker / Faston</description>
 <instance part="WASHERSM4" gate="G$1" x="15.24" y="104.14"/>
 <instance part="WASHERSM6" gate="G$1" x="15.24" y="96.52"/>
 <instance part="SCREWSM3" gate="G$1" x="15.24" y="88.9"/>
-<instance part="U$8" gate="G$1" x="157.48" y="83.82"/>
-<instance part="U$9" gate="G$1" x="157.48" y="40.64"/>
-<instance part="U$10" gate="G$1" x="157.48" y="81.28"/>
-<instance part="U$11" gate="G$1" x="157.48" y="43.18"/>
+<instance part="LSP1" gate="1" x="157.48" y="83.82" rot="R270"/>
+<instance part="LSP2" gate="1" x="157.48" y="81.28" rot="R270"/>
+<instance part="LSP3" gate="1" x="157.48" y="43.18" rot="R270"/>
+<instance part="LSP4" gate="1" x="157.48" y="40.64" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -990,10 +1024,10 @@ Flachstecker / Faston</description>
 <pinref part="U$6" gate="G$1" pin="TIP"/>
 <wire x1="147.32" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <junction x="147.32" y="83.82"/>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="147.32" y="81.28"/>
+<pinref part="LSP2" gate="1" pin="MP"/>
+<pinref part="LSP1" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1082,12 +1116,12 @@ Flachstecker / Faston</description>
 <junction x="147.32" y="50.8"/>
 <pinref part="U$6" gate="G$1" pin="RING"/>
 <pinref part="U$6" gate="G$1" pin="RING_SW"/>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
 <wire x1="147.32" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <junction x="147.32" y="40.64"/>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="43.18"/>
+<pinref part="LSP3" gate="1" pin="MP"/>
+<pinref part="LSP4" gate="1" pin="MP"/>
 </segment>
 </net>
 </nets>
